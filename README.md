@@ -26,7 +26,7 @@ PHP自作
 
 テストアカウント：tester1
 
-メールアドレス→test.test@test.com.jp
+メールアドレス→test@test.com.jp
 
 パスワード→aaaacccc
 
