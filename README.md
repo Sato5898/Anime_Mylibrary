@@ -41,4 +41,4 @@ XAMMP/MySQL/PHP/Laravel
 
 テーブル名：animes,anime_user,broadcasts,password_reset_tokens,roles,schedules,users
 
-お使いのphpMyAdminに上のデータベースを作り、入っているDB.sqlをインポートしていただければお使いいただけるようになると思います。
+お使いのphpMyAdminに上のデータベースを作り、入っている.sqlをインポートしていただければお使いいただけるようになると思います。
