@@ -13,7 +13,10 @@ class Summary extends Model
 
     /*一覧表の表示*/
     public function select() {
-        $animes = DB::table('animes')->get();
+        $animes = DB::table('animes')
+        ->get();
         return $animes;
     }
+
+    protected $dates = ['deleted_at'];
 }

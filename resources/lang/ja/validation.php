@@ -187,6 +187,10 @@ return [
         'genre' => 'ジャンル',
         'image_color' => 'イラスト',
         'official_page' => '公式サイト',
+        'on_air_time' => '放送時間',
+        'on_air_date' => '放送曜日',
+        'broadcast' => '放送局',
+        'streaming' => '配信サービス',
     ],
 
 ];

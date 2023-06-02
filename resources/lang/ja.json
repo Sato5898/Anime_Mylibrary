@@ -7,6 +7,11 @@
     "Already registered?":"既に登録はお済みでしたか？",
     "Reset Password": "パスワード再設定",
     "Send Password Reset Link":  "パスワード再設定URLを送信",
+    "Profile Information": "プロフィール情報",
+    "Update your account's profile information and email address.":"アカウントのプロフィール情報とメールアドレスを更新します。",
+    "SAVE":"保存",
+    "Update Password":"パスワードを更新する",
+    "Ensure your account is using a long, random password to stay secure.":"アカウントの安全性を確保するため、できるだけ長くて不規則なパスワードを推奨します。",
 
     "Name": "お名前",
     "Email":"メールアドレス",
@@ -15,6 +20,11 @@
     "Confirm Password": "パスワード(確認用)",
     "Remember me": "ログイン状態を保存",
     "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "登録時のメールアドレスを入力してください",
+    "Current Password":"現在のパスワード",
+    "New Password":"新しいパスワード",
+    "Delete Account":"アカウントの削除",
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.":"アカウントが削除されると、そのリソースとデータはすべて完全に削除されます。\nアカウントを削除する前に、保持したいデータや情報をダウンロードしてください。",
+    "DELETE ACCOUNT":"アカウント削除",
 
 
     "Hello!": "ご利用ありがとうございます。",
@@ -31,7 +41,4 @@
     "Dashboard": "お知らせ",
     "You are logged in!":"ログインしました！",
     "Email Password Reset Link":"パスワード再設定用メールを取得"
-
-
-    
 }

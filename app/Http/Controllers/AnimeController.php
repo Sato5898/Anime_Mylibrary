@@ -33,6 +33,9 @@ class AnimeController extends Controller
         $broadcast->on_air_date = $request->input('on_air_date');
         $broadcast->on_air_time = $request->input('on_air_time');
         $broadcast->streaming = $request->input('streaming');
+        if($broadcast->on_air_date == '月' && $broadcast->on_air_time == '23:00~23:30'){
+            $broadcast->schedule_id = 12;
+        }
         $broadcast->save();
 
         return redirect('add')->with('flash_message', '登録が完了しました');
