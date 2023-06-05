@@ -1,12 +1,18 @@
 <x-app-layout>
     <x-slot name="header">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             アニメ登録フォーム
         </h2>
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6 p-4">    
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6 p-4">
+                @if (session('flash_message'))
+                <div class="flash_message bg-success text-center py-3 my-0 text-white">
+                    {{ session('flash_message') }}
+                </div>
+                @endif
                 <form class="form" action="{{ route('add_insert') }}" method="post">
                 {{ csrf_field() }}
                     <div class="p-6 text-gray-900">
@@ -97,11 +103,13 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn" type="submit">登録する</button>
+                    <div class="text-center">
+                        <button class="btn btn-success" type="submit">登録する</button>
+                    </div>
                 </form>   
             </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> 
-    <script src="js/my-jquery.js"></script>
+    <script src="{{asset('/js/index.js')}}"></script>
 </x-app-layout>

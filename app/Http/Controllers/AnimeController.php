@@ -222,6 +222,6 @@ class AnimeController extends Controller
             }
         $broadcast->save();
 
-        return redirect('add')->with('flash_message', '登録が完了しました');
+        return redirect()->route('add')->with('flash_message', '登録が完了しました');
     }
 }
