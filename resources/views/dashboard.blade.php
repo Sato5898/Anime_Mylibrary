@@ -6,10 +6,11 @@
             一覧表
         </h2>
     </x-slot>
-    <div class="mt-6 mb-6">
-        <form class="form pr-6 " action="{{ route('add_schedule') }}" method="POST">
+    <div class="mt-6 mb-6 set_wrap">
+        <a href="{{ route('set') }}" class="set"><button type="button" class="set_btn btn bg-red-600">値の更新</button></a>
+        <form class="form pr-6 pt-4" action="{{ route('add_schedule') }}" method="POST">
             @csrf
-            <input type="submit" class="btn" value="番組表に追加">
+            <input type="submit" class="btn add_button" value="番組表に追加" onclick='return confirm ("値の更新は行いましたか？")'>
         </form>
     </div>
 

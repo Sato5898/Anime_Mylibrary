@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.2",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.8",
+        "laravelcollective/html": "^6.4",
         "socialiteproviders/twitter": "^4.1"
     },
     "require-dev": {

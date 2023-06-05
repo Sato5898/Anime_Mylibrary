@@ -49,6 +49,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('dashboard', [SummaryController::class, 'form'])->name('dashboard');
 
+Route::get('set', [ScheduleController::class, 'set'])->name('set');
+
 Route::get('/detail', function () {
     return view('detail');
 })->name('detail');
