@@ -9,7 +9,7 @@
     <div class="mt-6">
         <form class="form" action="{{ route('clear')}}" method="post">
             @csrf
-            <input class="btn" type="submit" value="番組表をクリア">
+            <input class="btn btn-primaryexit" type="submit" value="番組表をクリア">
         </form>
     </div>
 
@@ -17,7 +17,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <table class="schedule_table mobile-scroll ">
+                    <table class="schedule_table">
                             <tr>
                                 <th>時間/曜日</th>
                                 <th>日</th>
@@ -117,4 +117,5 @@
             </div>
         </div>
     </div>
+    <script src="{{asset('/js/index.js')}}"></script>
 </x-app-layout>

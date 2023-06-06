@@ -18,11 +18,11 @@ class ScheduleController extends Controller
         Schedule::where('anime_name', '!=', 'NULL')->update([
             'anime_name' => NULL,
         ]);
-        return redirect('schedule');
+        return redirect()->route('schedule')->with('flash_message_clear', '値のクリアが完了しました');
     }
     public function set() {
-        DB::update('UPDATE animes SET animes.schedule_id = ( SELECT broadcasts.schedule_id FROM broadcasts where animes.id = broadcasts.id');
-        return redirect()->route('dashboard')->with('flash_message', 'クリアが完了しました');
+        DB::update('UPDATE animes SET animes.schedule_id = ( SELECT broadcasts.schedule_id FROM broadcasts where animes.id = broadcasts.id)');
+        return redirect()->route('dashboard')->with('flash_message_add', '値の更新が完了しました');
     }
     
 }
